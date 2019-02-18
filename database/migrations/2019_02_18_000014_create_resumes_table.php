@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateResumesTable extends Migration
 {
@@ -15,10 +15,14 @@ class CreateResumesTable extends Migration
     {
         Schema::create('resumes', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('Title');
-            $table->text('Description');
-            $table->string('File');
-            $table->enum('Type',[]);
+
+            $table->string('title');
+            $table->text('description');
+            $table->string('file');
+            $table->enum('type', ['article', 'project', 'thesis', 'honor']);
+
+            $table->string('create_date');
+            $table->string('update_date')->nullable();
             $table->timestamps();
         });
     }
