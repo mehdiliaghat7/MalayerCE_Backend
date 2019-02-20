@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateQuotesTable extends Migration
 {
@@ -15,8 +15,12 @@ class CreateQuotesTable extends Migration
     {
         Schema::create('quotes', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('Body');
-            $table->integer('Author');
+
+            $table->string('author');
+            $table->text('quote');
+
+            $table->string('create_date');
+            $table->string('update_date')->nullable();
             $table->timestamps();
         });
     }
