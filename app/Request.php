@@ -28,5 +28,12 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Request extends Model
 {
-    //
+    public function user()
+    {
+        return $this->belongsTo('app\user');
+    }
+    public function lesson()
+    {
+        return $this->belongsTo('app\lesson');
+    }
 }

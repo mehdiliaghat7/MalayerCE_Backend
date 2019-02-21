@@ -50,5 +50,16 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Post extends Model
 {
-    //
+    public function user()
+    {
+        return $this->belongsTo('app\user');
+    }
+    public function category()
+    {
+        return $this->belongsTo('app\category');
+    }
+    public function blogComments()
+    {
+        return $this->hasMany('app\blogComment');
+    }
 }

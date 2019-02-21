@@ -40,5 +40,12 @@ use Illuminate\Database\Eloquent\Model;
  */
 class BlogComment extends Model
 {
-    //
+    public function user()
+    {
+        return $this->belongsTo('app\user');
+    }
+    public function post()
+    {
+        return $this->belongsTo('app\post');
+    }
 }
