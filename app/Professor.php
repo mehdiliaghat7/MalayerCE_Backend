@@ -48,5 +48,13 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Professor extends Model
 {
-    //
+    public function conversations()
+    {
+        return $this->hasMany('app\conversation');
+    }
+    public function lessons()
+    {
+        return $this->hasMany('app\lesson');
+    }
+
 }

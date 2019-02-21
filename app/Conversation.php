@@ -30,5 +30,21 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Conversation extends Model
 {
-    //
+    public function user()
+    {
+        return $this->belongsTo('app\user');
+    }
+    public function professor()
+    {
+        return $this->belongsTo('app\professor');
+    }
+    public function lesson()
+    {
+        return $this->belongsTo('app\lesson');
+    }
+    public function messages()
+    {
+        return $this->hasMany('app\message');
+    }
+
 }
