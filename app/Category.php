@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * App\Category
@@ -13,6 +14,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string|null $update_date
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Post[] $posts
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Category newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Category newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Category query()
@@ -26,8 +28,8 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Category extends Model
 {
-    public function posts()
+    public function posts(): HasMany
     {
-        return $this->hasMany('app\post');
+        return $this->hasMany(Post::class, 'category_id');
     }
 }

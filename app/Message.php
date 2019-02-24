@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * App\Message
@@ -17,6 +18,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string|null $update_date
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \App\Conversation $conversation
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Message newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Message newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Message query()
@@ -34,8 +36,8 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Message extends Model
 {
-    public function conversation()
+    public function conversation(): BelongsTo
     {
-        return $this->belongsTo('app\conversation');
+        return $this->belongsTo(Conversation::class, 'conversation_id');
     }
 }
