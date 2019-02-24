@@ -3,6 +3,8 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * App\Lesson
@@ -24,6 +26,10 @@ use Illuminate\Database\Eloquent\Model;
  * @property string|null $update_date
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Comment[] $comments
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Conversation[] $conversations
+ * @property-read \App\Professor $professor
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Request[] $requests
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Lesson newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Lesson newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Lesson query()
@@ -48,20 +54,23 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Lesson extends Model
 {
-    public function conversations()
+    public function conversations(): HasMany
     {
-        return $this->hasMany('app\conversation');
+        return $this->hasMany(Conversation::class, 'lesson_id');
     }
-    public function comments()
+
+    public function comments(): HasMany
     {
-        return $this->hasMany('app\comment');
+        return $this->hasMany(Comment::class, 'lesson_id');
     }
-    public function requests()
+
+    public function requests(): HasMany
     {
-        return $this->hasMany('app\request');
+        return $this->hasMany(Request::class, 'lesson_id');
     }
-    public function professor()
+
+    public function professor(): BelongsTo
     {
-        return $this->belongsTo('app\professor');
+        return $this->belongsTo(Professor::class, 'professor_id');
     }
 }

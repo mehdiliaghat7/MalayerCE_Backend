@@ -3,6 +3,8 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * App\Post
@@ -25,6 +27,9 @@ use Illuminate\Database\Eloquent\Model;
  * @property string|null $update_date
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\BlogComment[] $blogComments
+ * @property-read \App\Category $category
+ * @property-read \App\User $user
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Post newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Post newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Post query()
@@ -50,16 +55,18 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Post extends Model
 {
-    public function user()
+    public function user(): BelongsTo
     {
-        return $this->belongsTo('app\user');
+        return $this->belongsTo(User::class, 'user_id');
     }
-    public function category()
+
+    public function category(): BelongsTo
     {
-        return $this->belongsTo('app\category');
+        return $this->belongsTo(Category::class, 'category_id');
     }
-    public function blogComments()
+
+    public function blogComments(): HasMany
     {
-        return $this->hasMany('app\blogComment');
+        return $this->hasMany(BlogComment::class, 'post_id');
     }
 }

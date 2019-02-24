@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * App\Professor
@@ -24,6 +25,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property string|null $update_date
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Conversation[] $conversations
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Lesson[] $lessons
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Professor newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Professor newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Professor query()
@@ -48,13 +51,14 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Professor extends Model
 {
-    public function conversations()
+    public function conversations(): HasMany
     {
-        return $this->hasMany('app\conversation');
+        return $this->hasMany(Conversation::class, 'professor_id');
     }
-    public function lessons()
+
+    public function lessons(): HasMany
     {
-        return $this->hasMany('app\lesson');
+        return $this->hasMany(Lesson::class, 'professor_id');
     }
 
 }

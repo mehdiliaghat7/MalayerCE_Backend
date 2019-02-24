@@ -2,9 +2,9 @@
 
 namespace App;
 
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 
 /**
  * App\User
@@ -25,7 +25,13 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
  * @property string|null $update_date
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\BlogComment[] $blogComments
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Comment[] $comments
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Contact[] $contacts
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Conversation[] $conversations
  * @property-read \Illuminate\Notifications\DatabaseNotificationCollection|\Illuminate\Notifications\DatabaseNotification[] $notifications
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Post[] $posts
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Request[] $requests
  * @method static \Illuminate\Database\Eloquent\Builder|\App\User newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\User newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\User query()
@@ -77,28 +83,34 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-    public function comments()
+
+    public function comments(): HasMany
     {
-        return $this->hasMany('app\comment');
+        return $this->hasMany(Comment::class, 'user_id');
     }
-    public function posts()
+
+    public function posts(): HasMany
     {
-        return $this->hasMany('app\post');
+        return $this->hasMany(Post::class, 'user_id');
     }
-    public function conversations()
+
+    public function conversations(): HasMany
     {
-        return $this->hasMany('app\conversation');
+        return $this->hasMany(Conversation::class, 'user_id');
     }
-    public function contacts()
+
+    public function contacts(): HasMany
     {
-        return $this->hasMany('app\contact');
+        return $this->hasMany(Contact::class, 'user_id');
     }
-    public function requests()
+
+    public function requests(): HasMany
     {
-        return $this->hasMany('app\request');
+        return $this->hasMany(Request::class, 'user_id');
     }
-    public function blogComments()
+
+    public function blogComments(): HasMany
     {
-        return $this->hasMany('app\blogComment');
+        return $this->hasMany(BlogComment::class, 'user_id');
     }
 }

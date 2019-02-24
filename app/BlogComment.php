@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * App\BlogComment
@@ -20,6 +21,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property string|null $update_date
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \App\Post $post
+ * @property-read \App\User|null $user
  * @method static \Illuminate\Database\Eloquent\Builder|\App\BlogComment newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\BlogComment newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\BlogComment query()
@@ -40,12 +43,13 @@ use Illuminate\Database\Eloquent\Model;
  */
 class BlogComment extends Model
 {
-    public function user()
+    public function user(): BelongsTo
     {
-        return $this->belongsTo('app\user');
+        return $this->belongsTo(User::class, 'user_id');
     }
-    public function post()
+
+    public function post(): BelongsTo
     {
-        return $this->belongsTo('app\post');
+        return $this->belongsTo(Post::class, 'post_id');
     }
 }

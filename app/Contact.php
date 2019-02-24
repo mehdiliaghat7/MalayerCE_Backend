@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * App\Contact
@@ -15,6 +16,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string|null $update_date
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \App\User|null $user
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Contact newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Contact newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Contact query()
@@ -30,8 +32,8 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Contact extends Model
 {
-    public function user()
+    public function user(): BelongsTo
     {
-        return $this->belongsTo('app\user');
+        return $this->belongsTo(User::class, 'user_id');
     }
 }

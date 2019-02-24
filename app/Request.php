@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * App\Request
@@ -14,6 +15,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property string|null $update_date
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \App\Lesson $lesson
+ * @property-read \App\User $user
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Request newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Request newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Request query()
@@ -28,12 +31,13 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Request extends Model
 {
-    public function user()
+    public function user(): BelongsTo
     {
-        return $this->belongsTo('app\user');
+        return $this->belongsTo(User::class, 'user_id');
     }
-    public function lesson()
+
+    public function lesson(): BelongsTo
     {
-        return $this->belongsTo('app\lesson');
+        return $this->belongsTo(Lesson::class, 'lesson_id');
     }
 }
