@@ -16,7 +16,9 @@ class CreateLessonsTable extends Migration
         Schema::create('lessons', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('professor_id')->unsigned();
-            $table->string('lesson_id')->unique();
+            $table->integer('lesson_id')->unique();
+            $table->integer('lessongroup_id')->unsigned();
+
 
             $table->string('title');
             $table->string('file_ids')->nullable();
@@ -34,6 +36,7 @@ class CreateLessonsTable extends Migration
                 ->on('professors')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
+
 
             $table->string('create_date');
             $table->string('update_date')->nullable();
