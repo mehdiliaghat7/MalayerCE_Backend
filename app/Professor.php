@@ -60,5 +60,9 @@ class Professor extends Model
     {
         return $this->hasMany(Lesson::class, 'professor_id');
     }
+    public function resume():HasMany
+    {
+        return $this->hasMany(Resume::class , 'professor_id');
+    }
 
 }

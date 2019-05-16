@@ -32,5 +32,9 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Resume extends Model
 {
-    //
+    public function professor():BelongsTo
+    {
+        return $this->belongsTo(Professor::class , 'professor_id');
+
+    }
 }

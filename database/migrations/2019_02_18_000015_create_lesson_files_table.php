@@ -16,11 +16,19 @@ class CreateLessonFilesTable extends Migration
         Schema::create('lesson_files', function (Blueprint $table) {
             $table->increments('id');
 
+            $table->integer('lesson_id')->unsigned();
+
             $table->string('title');
             $table->text('description')->nullable();
             $table->string('file');
             $table->enum('type', ['booklet', 'article', 'book']);
             $table->enum('status', ['public', 'private']);
+
+            $table->foreign('lesson_id')
+                ->references('id')
+                ->on('lessons')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
 
             $table->string('create_date');
             $table->string('update_date')->nullable();

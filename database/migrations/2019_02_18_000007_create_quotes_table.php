@@ -18,6 +18,7 @@ class CreateQuotesTable extends Migration
 
             $table->string('author');
             $table->text('quote');
+            $table->tinyInteger('confirmed')->default(0);
 
             $table->string('create_date');
             $table->string('update_date')->nullable();

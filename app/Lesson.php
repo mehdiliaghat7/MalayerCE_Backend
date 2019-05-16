@@ -68,6 +68,10 @@ class Lesson extends Model
     {
         return $this->hasMany(Request::class, 'lesson_id');
     }
+    public function lessonsFiles()
+    {
+        return $this->hasMany(LessonFile::class ,'lesson_id');
+    }
 
     public function professor(): BelongsTo
     {

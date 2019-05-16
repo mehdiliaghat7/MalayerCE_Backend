@@ -34,5 +34,8 @@ use Illuminate\Database\Eloquent\Model;
  */
 class LessonFile extends Model
 {
-    //
+    public function lesson():BlongsTo
+    {
+        return $this->belongsTo(Lesson::class ,'lesson_id');
+    }
 }
