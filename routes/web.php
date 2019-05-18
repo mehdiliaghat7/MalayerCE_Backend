@@ -11,8 +11,12 @@
 |
 */
 
-
-
-Auth::routes();
-
 Route::get('/', 'Blog\HomeController@index')->name('home');
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes/login route
+|--------------------------------------------------------------------------
+*/
+Route::get('/login/form','Blog\LoginController@LoginForm')->name('login.form');
+Route::post('/login','Blog\LoginController@Login')->name('login');

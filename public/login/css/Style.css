@@ -1,0 +1,411 @@
+﻿body{
+    background-color: rgb(199, 250, 146);
+}
+
+@font-face {
+    font-family: 'Nazanin';
+    src: url('/fonts/Nazanin.eot?#') format('eot'),
+    url('/fonts/Nazanin.ttf') format('truetype'),
+    url('/fonts/Nazanin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: Nazanin;
+}
+
+.main {
+    margin-top: 150px;
+}
+
+.image {
+    padding: 0;
+    box-sizing: border-box;
+    height: 400px;
+    margin-right: -30px;
+
+}
+
+.image2 {
+   margin: 0;
+    box-sizing: border-box;
+    border-radius: 64px 0 0 64px;
+    height: 400px;
+}
+
+.Input {
+    direction: rtl;
+    background-color: #1565C0;
+    border-radius:0 64px 64px 0 ;
+    height: 400px;
+}
+
+.inputres{
+  border-radius: 24px 24px 24px 24px;
+}
+
+.button {
+    display: flex ;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.login {
+    color: #0069d9;
+    border: none;
+    margin-top: 5px;
+    float: left;
+    text-align: center;
+    border-radius: 14px 0px 0px 14px;
+    background-color: gainsboro;
+    width: 73px;
+    height: 30px;
+}
+
+.register {
+    color: #0069d9;
+    border: none;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 0px 14px 14px 0px;
+    background-color: gainsboro;
+    width: 73px;
+    height: 30px;
+
+}
+
+
+.register:active {
+    color: white;
+    background-color: #003c8f;
+}
+
+.login:active {
+    color: white;
+    background-color: #003c8f;
+}
+
+#Login{
+    display: none;
+    margin-top: 20px;
+}
+
+#Register {
+    display: block;
+
+}
+
+.name {
+    margin-top: 20px;
+    border: none;
+    border-radius: 21px;
+    width: 250px;
+    height: 37px;
+}
+
+.name:focus {
+    transition-property: border-right;
+    transition-duration: 1s;
+    border-color: dodgerBlue;
+    box-shadow: 0 0 20px 0 #d2322d;
+}
+
+.username {
+    border: none;
+    margin-top: 10px;
+    border-radius: 21px;
+    width: 250px;
+    height: 37px;
+
+}
+
+.username:focus {
+    transition-property: border-right;
+    transition-duration: 1s;
+    border-color: dodgerBlue;
+    box-shadow: 0 0 20px 0 #d2322d;
+}
+
+.Email{
+    padding-right: 40px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 21px;
+    width: 250px;
+    height: 37px;
+}
+
+.Email:focus {
+    transition-property: border-right;
+    transition-duration: 1s;
+    border-color: dodgerBlue;
+    box-shadow: 0 0 20px 0 #d2322d;
+}
+
+.companyname {
+    border: none;
+    margin-top: 10px;
+    border-radius: 21px;
+    width: 265px;
+    height: 37px;
+}
+
+.companyname:focus {
+    transition-property: border-right;
+    transition-duration: 1s;
+    border-color: dodgerBlue;
+    box-shadow: 0 0 20px 0 #d2322d;
+}
+.password{
+    border: none;
+    margin-top: 10px;
+    border-radius: 21px;
+    width: 265px;
+    height: 37px;
+}
+
+.password:focus {
+    transition-property: border-right;
+    transition-duration: 1s;
+    border-color: dodgerBlue;
+    box-shadow: 0 0 20px 0 #d2322d;
+}
+
+.ُSubmit {
+    margin-top: 20px;
+    border: none;
+    border-radius: 14px 14px 14px 14px;
+    text-align: center;
+    background-color: yellow;
+    width: 73px;
+    height: 30px;
+}
+
+.ُSubmit:active {
+    color: white;
+    background-color: #003c8f;
+}
+
+.passwordL {
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 21px;
+    width: 250px;
+    height: 37px;
+}
+
+.passwordL:focus {
+    transition-property: border-right;
+    transition-duration: 1s;
+    border-color: dodgerBlue;
+    box-shadow: 0 0 20px 0 #d2322d;
+}
+
+.usernameL {
+    border: none;
+    margin-top: 82px;
+    border-radius: 21px;
+    width: 250px;
+    height: 37px;
+}
+
+.usernameL:focus {
+    transition-property: border-right;
+    transition-duration: 1s;
+    border-color: dodgerBlue;
+    box-shadow: 0 0 20px 0 #d2322d;
+}
+
+.ُSubmitL {
+    margin-top: 30px;
+    border: none;
+    border-radius: 14px 14px 14px 14px;
+    text-align: center;
+    background-color: yellow;
+    width: 73px;
+    height: 30px;
+}
+
+.ُSubmitL:active {
+    color: white;
+    background-color: #003c8f;
+}
+
+.textL{
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    .Input{
+        border-radius: 24px 24px 24px 24px;
+    }
+}
+
+
+.inputWithiconLogin input{
+    padding-right: 50px;
+}
+.inputWithiconLogin i{
+    color: #adb5bd;
+    position: absolute;
+    top:163px;
+    right: 27px;
+    font-size: 20px;
+
+}
+.borderL{
+    border:1px solid #adb5bd;
+    position: absolute;
+    top:158px;
+    right: 56px;
+    height: 31px;
+}
+.inputWithiconLogin input:focus ~ i{
+    color: darkorange;
+}
+
+
+.inputWithiconPassword input{
+    padding-right: 50px;
+}
+.inputWithiconPassword i{
+    color: #adb5bd;
+    position: absolute;
+    top:230px;
+    right: 27px;
+    font-size: 20px;
+
+}
+.borderPL{
+    border:1px solid #adb5bd;
+    position: absolute;
+    top:225px;
+    right: 56px;
+    height: 31px;
+}
+.inputWithiconPassword input:focus ~ i{
+    color: darkorange;
+}
+
+
+
+
+
+.inputWithicon_Email input{
+    padding-right: 40px;
+
+}
+.inputWithicon_Email i{
+    color: #adb5bd;
+    position: absolute;
+    top:175px;
+    right: 26px;
+    font-size: 20px;
+}
+.inputWithicon_Email input:focus ~ i{
+    color: darkorange;
+}
+.borderE{
+    border:1px solid #adb5bd;
+    position: absolute;
+    top:171px;
+    right: 49px;
+    height: 31px;
+}
+
+
+
+.inputWithicon_name input{
+    padding-right: 40px;
+}
+.borderN{
+    border:1px solid #adb5bd;
+    position: absolute;
+    top:76px;
+    right: 49px;
+    height: 31px;
+}
+.inputWithicon_name i{
+    color: #adb5bd;
+    position: absolute;
+    top:81px;
+    right: 23px;
+    font-size: 20px;
+}
+.inputWithicon_name input:focus ~ i{
+    color: darkorange;
+}
+
+
+
+.inputwithicon_username input{
+    padding-right: 40px;
+}
+.borderU{
+    border:1px solid #adb5bd;
+    position: absolute;
+    top:123px;
+    right: 49px;
+    height: 31px;
+}
+.inputwithicon_username i{
+    color: #adb5bd;
+    position: absolute;
+    top:128px;
+    right: 26px;
+    font-size: 20px;
+}
+.inputwithicon_username input:focus ~ i{
+        color: darkorange;
+}
+
+
+
+
+.inputWithicon_Companyname input{
+    padding-right: 40px;
+
+}
+.borderC{
+    border:1px solid #adb5bd;
+    position: absolute;
+    top:216px;
+    right: 49px;
+    height: 31px;
+}
+.inputWithicon_Companyname i{
+    color: #adb5bd;
+    position: absolute;
+    top:222px;
+    right: 26px;
+    font-size: 20px;
+}
+.inputWithicon_Companyname input:focus ~ i{
+    color: darkorange;
+}
+
+
+
+
+.inputwithicon_password input{
+    padding-right: 40px;
+}
+.borderP{
+    border:1px solid #adb5bd;
+    position: absolute;
+    top:263px;
+    right: 49px;
+    height: 31px;
+}
+.inputwithicon_password i{
+    color: #adb5bd;
+    position: absolute;
+    top:269px;
+    right: 26px;
+    font-size: 20px;
+}
+.inputwithicon_password input:focus ~ i{
+    color: darkorange;
+}

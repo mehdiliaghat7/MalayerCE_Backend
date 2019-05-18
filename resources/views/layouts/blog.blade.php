@@ -157,7 +157,7 @@
                     </div>
                     <div class="verticalLine"></div>
                     <div class="col-md-2 col-sm-2 col-1" >
-                        <a class="nav-link" style="float: right" href="{{route('login')}}">ورود</a>
+                        <a class="nav-link" style="float: right" href="{{route('login.form')}}">ورود</a>
                     </div>
                     <div class="col-md-6 col-sm-6 col-6 active-pink-4 mb-4">
                         <input class="form-control" type="text" placeholder="جست وجو" aria-label="Search">
