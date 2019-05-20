@@ -145,7 +145,7 @@
 <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
     <div class="row">
         <div class="col-md-1 col-sm-1 col-1">
-            <img class="logo" src="img/ShetabHub.png" style="width: 170px">
+            <img class="logo" src="{{ asset('Blog/img/ShetabHub.png') }}" style="width: 170px">
         </div>
     </div>
     <div class="container">
