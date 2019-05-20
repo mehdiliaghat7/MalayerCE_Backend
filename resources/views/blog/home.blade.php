@@ -7,7 +7,7 @@
                     <div class="card-header-c d-flex">
                         <div class="card-title-c align-self-center col-md-12">
                             <div style="padding-top:20px" >
-                                <a href="#"> <img  src="{{ asset('blog/img/coin.png') }}" style="width: 100px"></a>
+                                <a href="#"> <img  src="{{ asset('Blog/img/coin.png') }}" style="width: 100px"></a>
                             </div>
                             <br>
                             <h2 class="title-c">درآمدزایی</h2>
