@@ -5,7 +5,7 @@
 }
 .navbar
 {
-    height: 140px;
+    height: 81px;
 }
 
 .container
@@ -16,6 +16,7 @@
 .logo
 {
     padding-top: 5px;
+    margin-bottom: 28px;
 }
 .verticalLine {
     border-left: 2px solid white;
@@ -28,11 +29,11 @@
 }
 .navbar
 {
-    border-bottom: 6px solid #0062cc;
+    border-bottom: 6px solid  #2f89fc;
 }
 .carousel-item-a
 {
-    border-bottom: 6px solid #0062cc;
+    border-bottom: 6px solid  #2f89fc;
 }
 .vertical
 {
@@ -110,11 +111,11 @@ element.style {
 }
 .btn-warning {
     color: #ffffff;
-    background-color: #0062cc;
-    border-color: #0062cc;
+    background-color: #2f89fc;
+    border-color:  #2f89fc;
 }
 .btn-warning:hover {
-    color: #0062cc;
+    color:  #2f89fc;
     background-color: #ffffff;
     border-color: #ffffff;
 }
