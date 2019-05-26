@@ -153,7 +153,7 @@
                         </div>
                         <div class="verticalLine"></div>
                         <div class="col-md-1 col-sm-2 col-1">
-                            <a class="nav-link" style="float: right" href="{{route('login')}}">ورود</a>
+                            <a class="nav-link" style="float: right" href="{{route('login.form')}}">ورود</a>
                         </div>
                     </div>
                     <div>
