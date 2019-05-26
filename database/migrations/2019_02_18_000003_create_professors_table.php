@@ -17,20 +17,20 @@ class CreateProfessorsTable extends Migration
             $table->increments('id');
 
             $table->string('name');
-            $table->string('professor_code')->unique()->nullable();
+            $table->string('user_code')->unique()->nullable();
             $table->string('image')->nullable();
             $table->string('resume_ids')->nullable();
             $table->enum('type', ['tuition', 'commission', 'head']);
             $table->text('presentTimes')->nullable();
             $table->string('password');
-            $table->string('national_id')->unique();
+            $table->string('national_id')->unique()->nullable();
             $table->string('email')->unique();
             $table->string('degree')->nullable();
             $table->string('field')->nullable();
             $table->tinyInteger('confirmed')->default(0);
             $table->enum('role', ['admin', 'manager', 'professor']);
 
-            $table->string('create_date');
+            $table->string('create_date')->nullable();
             $table->string('update_date')->nullable();
             $table->timestamps();
         });

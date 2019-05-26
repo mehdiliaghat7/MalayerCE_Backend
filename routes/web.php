@@ -20,3 +20,4 @@ Route::get('/', 'Blog\HomeController@index')->name('home');
 */
 Route::get('/login/form','Blog\LoginController@LoginForm')->name('login.form');
 Route::post('/login','Blog\LoginController@Login')->name('login');
+Route::post('/register','Blog\RegisterController@store')->name('register');

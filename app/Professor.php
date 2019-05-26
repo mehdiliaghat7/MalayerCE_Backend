@@ -49,8 +49,13 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Professor whereUpdatedAt($value)
  * @mixin \Eloquent
  */
+
 class Professor extends Model
 {
+
+
+
+
     public function conversations(): HasMany
     {
         return $this->hasMany(Conversation::class, 'professor_id');

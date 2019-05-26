@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Blog;
 
+use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
@@ -19,8 +20,10 @@ class LoginController extends Controller
     {
         return view('blog.login');
     }
-    public function Login()
+    public function Login(Request $request )
     {
+        dd($request)  ;
 
     }
+
 }

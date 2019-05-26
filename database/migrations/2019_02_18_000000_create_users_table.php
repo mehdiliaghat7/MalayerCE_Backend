@@ -20,15 +20,15 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('student_id')->unique();
+            $table->string('user_code')->unique();
             $table->string('image')->nullable();
-            $table->string('national_id')->unique();
+            $table->string('national_id')->unique()->nullable();
             $table->string('phone')->unique()->nullable();
             $table->string('father_name')->nullable();
             $table->tinyInteger('confirmed')->default(0);
             $table->rememberToken();
 
-            $table->string('create_date');
+            $table->string('create_date')->nullable();
             $table->string('update_date')->nullable();
             $table->timestamps();
         });
