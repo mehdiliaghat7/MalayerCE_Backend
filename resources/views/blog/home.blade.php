@@ -119,7 +119,7 @@
                             <img class="imgBox" src="{{asset('Blog/img/wemane.png')}}">
                         </div>
                         <div>
-                            <h4 style="font-size:19px;margin-top: 10px ">رضوان یعقوبی</h4>
+                            <h4 style="font-size:19px;margin-top: 10px ">یعقوبرضوان ی</h4>
 
                             <span style="color: #2f89fc;font-size: 13px">کارشناسی ارشد</span>
                             <div class="text">
