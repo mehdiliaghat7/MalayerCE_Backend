@@ -1,0 +1,33 @@
+body {
+}
+
+.container2 {
+    text-align: right;
+}
+
+.main_form {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #fff;
+
+}
+
+.main_form > h3{
+
+    text-align: right
+}
+.label {
+    text-align: right;
+}
+
+.list {
+    background-color: #ffffff;
+    height: 170px;
+    padding: 10px 0 0 0;
+    border-radius: 4px;
+}
+.list > h3{
+    text-align: center;
+}

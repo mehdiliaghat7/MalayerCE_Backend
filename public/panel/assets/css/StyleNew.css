@@ -1,0 +1,354 @@
+.comment {
+    position: absolute;
+    top: 8px;
+    left: -2px;
+    width: 18px;
+    height: 18px;
+    color: #CFD8DC;
+}
+
+.title {
+    direction: rtl;
+}
+
+#inputDan1 {
+    width: 100px;
+    float: right;
+    margin: 5px 10px 0 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.navbar .navbar-nav li > a .menu-icon {
+    color: #607d8b;
+    float: right;
+    margin-top: 8px;
+    width: 55px;
+    z-index: 9;
+    margin-right: 10px;
+}
+
+.navbar .navbar-nav li.menu-item-has-children .sub-menu {
+    background: #fff;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    overflow-y: hidden;
+    padding: 0 0 0 35px;
+    text-align: right;
+    float: left;
+}
+
+.navbar .navbar-nav li.menu-item-has-children .sub-menu i {
+    color: #c8c9ce;
+    float: right;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    top: 9px;
+}
+
+.navbar .navbar-nav li.menu-item-has-children .sub-menu a .menu-icon {
+    top: 13px;
+    text-align: right;
+    width: 25px;
+}
+
+.stat-widget-five .stat-icon {
+    font-size: 50px;
+    line-height: 50px;
+    position: absolute;
+    right: 30px;
+    text-align: right;
+    top: 20px;
+}
+
+.orders {
+    overflow: hidden;
+    direction: rtl;
+    text-align: right;
+}
+
+.messenger-box .msg-sent .avatar, .messenger-box .msg-sent .msg-box {
+    float: right;
+    text-align: right;
+}
+
+.messenger-box .msg-sent .msg-box {
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.user-area .user-menu {
+    top: 51px !important;
+    text-align: right;
+}
+
+.for-notification .dropdown-menu {
+    text-align: right;
+}
+
+.for-notification .dropdown-menu .dropdown-item {
+    padding: 5px 15px !important;
+    text-overflow: ellipsis;
+}
+
+.for-notification .dropdown-menu .dropdown-item i {
+    float: right;
+    font-size: 14px;
+    margin: 5px 5px 0 0;
+    text-align: left;
+    width: 20px;
+}
+
+.for-notification .dropdown-menu .dropdown-item p {
+    padding: 0 !important;
+    text-overflow: ellipsis;
+}
+
+.for-message .dropdown-menu {
+    text-align: right;
+}
+
+.header-left .dropdown .dropdown-menu .dropdown-item .photo {
+    float: right;
+    margin-right: 15px;
+    width: 25px;
+}
+
+.right-panel .breadcrumbs .breadcrumbs-inner {
+    background-color: #fff;
+    direction: rtl;
+}
+
+.card-lesson {
+    direction: rtl;
+}
+
+.card-header {
+    background-color: #00c292;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.BtnStudent {
+    border: 1px solid #03a9f3;
+    background-color: #03a9f3;
+    margin-right: -7px;
+
+}
+
+.BtnProfssor {
+    border: 1px solid #03a9f3;
+
+    background-color: #03a9f3
+}
+
+.submit {
+    margin-top: 30px;
+}
+
+.submitUserEdit {
+    border: 1px solid #03a9f3;
+    background-color: #03a9f3;
+}
+
+.SetContent {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.btnColor {
+    border: 1px solid #03a9f3;
+    background-color: #03a9f3;
+}
+
+.Lesson_index_Prof {
+    display: inline;
+    margin-right: 10px;
+}
+
+.Lesson_index_Course {
+    display: inline;
+    margin: 0 0 0 42px;
+}
+
+.lesson_index_icon {
+    margin-right: 20px;
+}
+
+.lesson_index_card-header {
+    background-color: #00c292;
+    color: white;
+}
+
+.location {
+    margin: 15px 0 10px 0;
+}
+
+.contentInput {
+    margin-top: 15px;
+}
+
+.submitCreateUser {
+    margin-top: 10px;
+    border: 1px solid #03a9f3;
+    background-color: #03a9f3;
+}
+
+.Header_card {
+    background-color: #00c292;
+    color: #FFFFFF;
+}
+
+/* Page Profile Css Style Start*/
+
+.imgProfile {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 5px solid #00c292;
+
+    -webkit-box-shadow: 0px 3px 66px -15px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 3px 66px -15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 3px 66px -15px rgba(0, 0, 0, 0.5);
+}
+
+.Profile_Content {
+    direction: rtl;
+    margin-top: 0px;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-right: 3px dashed #2196F3;
+    border-left: 3px dashed #2196F3;
+    border-bottom: 3px dashed #2196F3;
+
+    -webkit-box-shadow: 0px 3px 66px -15px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 3px 66px -15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 3px 66px -15px rgba(0, 0, 0, 0.5);
+
+}
+
+.detail {
+    direction: rtl;
+    text-align: center;
+    height: 402px;
+    border-radius: 4px;
+}
+
+.detail h6 {
+    color: #b5bcc2;
+    margin: 30px 0 10px 0;
+}
+
+.name {
+    color: black;
+    margin: 20px 0 10px 0;
+}
+
+.Edit {
+    background-color: #00c292;
+    color: #FFFFFF;
+    height: 50px;
+    text-align: center;
+    padding-top: 12px;
+    margin-top: 20px;
+}
+
+.Btn_edit {
+    margin-top: 20px;
+}
+
+/* Page Profile Css Style End*/
+
+/* Page Resume_Index Css Style start*/
+
+.Header_Resume {
+    direction: rtl;
+    text-align: right;
+    background-color: #00c292;
+    height: 42px;
+    border-radius: 4px;
+}
+
+.Scientific {
+    background-color: #FFFFFF;
+    margin-top: 40px;
+    direction: rtl;
+    text-align: justify;
+    padding: 10px;
+    padding-top: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 66px -15px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 3px 66px -15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 3px 66px -15px rgba(0, 0, 0, 0.5);
+}
+
+.Scientific p {
+
+    color: #404040;
+}
+
+.Title {
+    margin-top: 30px;
+    text-align: right;
+
+}
+
+.imgFile {
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+.top h6 {
+    margin-top: 20px;
+
+}
+
+.ButtonEdit {
+    margin-right: 20px;
+}
+
+.input_resume label {
+    text-align: right;
+    display: inline-block;
+}
+
+/* Page Resume_Index Css Style End*/
+
+/* Page User_Index Css Style start*/
+#ProfessorList {
+    display: block;
+}
+
+#StudentList {
+    display: none;
+}
+
+/* Page User_Index Css Style End*/
+
+/* Page User_Create Css Style start*/
+#profssor {
+    display: block;
+}
+
+#student {
+    display: none;
+
+}
+/* Page User_Create Css Style End*/
+
+/* Page Post_Index Css Style start*/
+.post img {
+    height: 300px;
+
+}
+.post h4, p {
+    text-align: right;
+    direction: rtl;
+}
+/* Page Post_Index Css Style End*/

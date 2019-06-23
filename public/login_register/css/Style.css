@@ -12,7 +12,7 @@
 
 
 .main {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .image {
@@ -247,7 +247,7 @@
 .inputWithiconLogin i{
     color: #adb5bd;
     position: absolute;
-    top:172px;
+    top:168px;
     right: 27px;
     font-size: 20px;
 
@@ -255,7 +255,7 @@
 .borderL{
     border:1px solid #adb5bd;
     position: absolute;
-    top:168px;
+    top:164px;
     right: 56px;
     height: 31px;
 }
@@ -270,7 +270,7 @@
 .inputWithiconPassword i{
     color: #adb5bd;
     position: absolute;
-    top:241px;
+    top:237px;
     right: 27px;
     font-size: 20px;
 
@@ -278,7 +278,7 @@
 .borderPL{
     border:1px solid #adb5bd;
     position: absolute;
-    top:235px;
+    top:231px;
     right: 56px;
     height: 31px;
 }
@@ -297,7 +297,7 @@
 .inputWithicon_Email i{
     color: #adb5bd;
     position: absolute;
-    top:174px;
+    top:193px;
     right: 26px;
     font-size: 20px;
 }
@@ -307,7 +307,7 @@
 .borderE{
     border:1px solid #adb5bd;
     position: absolute;
-    top:170px;
+    top:190px;
     right: 49px;
     height: 31px;
 }
@@ -320,14 +320,14 @@
 .borderN{
     border:1px solid #adb5bd;
     position: absolute;
-    top:123px;
+    top:143px;
     right: 49px;
     height: 31px;
 }
 .inputWithicon_name i{
     color: #adb5bd;
     position: absolute;
-    top:130px;
+    top:147px;
     right: 23px;
     font-size: 20px;
 }
@@ -343,14 +343,14 @@
 .borderU{
     border:1px solid #adb5bd;
     position: absolute;
-    top:170px;
+    top:176px;
     right: 49px;
     height: 31px;
 }
 .inputwithicon_username i{
     color: #adb5bd;
     position: absolute;
-    top:175px;
+    top:179px;
     right: 26px;
     font-size: 20px;
 }
@@ -368,14 +368,14 @@
 .borderC{
     border:1px solid #adb5bd;
     position: absolute;
-    top:217px;
+    top:237px;
     right: 49px;
     height: 31px;
 }
 .inputWithicon_Companyname i{
     color: #adb5bd;
     position: absolute;
-    top:222px;
+    top:241px;
     right: 26px;
     font-size: 20px;
 }
@@ -392,14 +392,14 @@
 .borderP{
     border:1px solid #adb5bd;
     position: absolute;
-    top:264px;
+    top:284px;
     right: 49px;
     height: 31px;
 }
 .inputwithicon_password i{
     color: #adb5bd;
     position: absolute;
-    top:270px;
+    top:284px;
     right: 26px;
     font-size: 20px;
 }

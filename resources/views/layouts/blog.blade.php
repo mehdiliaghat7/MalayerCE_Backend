@@ -34,6 +34,7 @@
     <link href="{{ asset('Blog/css/SliderHead.css') }}" rel="stylesheet">
     <link href="{{ asset('Blog/css/StyleBox.css') }}" rel="stylesheet">
     <link href="{{ asset('Blog/css/card.css') }}" rel="stylesheet" >
+    <link href="{{ asset('Blog/css/Professor.css') }}" rel="stylesheet">
     <!--<link rel="stylesheet" href="css/styleB.css">-->
 </head>
 
@@ -148,8 +149,8 @@
                 <div class="navbar-collapse collapse  " id="navbarDefault">
                     <div class="row" style="margin-bottom: 10px; margin-right: 217px;direction: rtl">
                         <div class="col-md-9 col-sm-3 col-3">
-                            <button type="button" class="btn btn-warning" style="">ثبت نام
-                            </button>
+                                <button  type="button" class="btn btn-warning" style="" ><a  href="{{route('register.form')}}">ثبت نام</a>
+                                </button>
                         </div>
                         <div class="verticalLine"></div>
                         <div class="col-md-1 col-sm-2 col-1">

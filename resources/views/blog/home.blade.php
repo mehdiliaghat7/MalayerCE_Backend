@@ -84,7 +84,7 @@
             </div>
         </div>
         <div class="container pt-0 mt-30 carousel-inner section-header" style="margin-left: 28px">
-            <h3 style="margin-top: 10px"> معرفی اساتید </h3>
+            <h3 style="margin-top: 10px ; text-align: center"> معرفی اساتید </h3>
             <br>
             <br>
 
@@ -94,7 +94,7 @@
 
                     <div class="box" style="background-color: white; height: 500px;width: 70%">
                         <div>
-                            <img class="imgBox" src="{{asset('Blog/img/person_6.jpg')}}">
+                            <img class="imgBox" src="{{asset('Blog/img/mane.png')}}">
                         </div>
                         <div>
                             <h4 style="font-size:19px;margin-top: 10px ">میثم مرادی</h4>
@@ -105,7 +105,7 @@
                                 <a class="icon" href="#"><i class="fab fa-twitter"></i></a>
                                 <a class="icon" href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a class="icon" href="#"><i class="fab fa-instagram"></i></a>
-                                <a class="icon" href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a class="icon" href="{{route('professor')}}"><i class="fab fa-google-plus-g"></i></a>
                             </div>
 
                         </div>
@@ -116,7 +116,7 @@
 
                     <div class="box" style="background-color: white; height: 500px;width: 70%">
                         <div>
-                            <img class="imgBox" src="{{asset('Blog/img/person_8.jpg')}}">
+                            <img class="imgBox" src="{{asset('Blog/img/wemane.png')}}">
                         </div>
                         <div>
                             <h4 style="font-size:19px;margin-top: 10px ">رضوان یعقوبی</h4>
@@ -127,7 +127,7 @@
                                 <a class="icon" href="#"><i class="fab fa-twitter"></i></a>
                                 <a class="icon" href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a class="icon" href="#"><i class="fab fa-instagram"></i></a>
-                                <a class="icon" href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a class="icon" href="{{route('professor')}}"><i class="fab fa-google-plus-g"></i></a>
                             </div>
 
                         </div>
@@ -138,7 +138,7 @@
 
                     <div class="box" style="background-color: white; height: 500px;width: 70%">
                         <div>
-                            <img class="imgBox" src="{{asset('Blog/img/person_5.jpg')}}">
+                            <img class="imgBox" src="{{asset('Blog/img/mane.png')}}">
                         </div>
                         <div>
                             <h4 style="font-size:19px;margin-top: 10px ">علیرضا افتخاری</h4>
@@ -149,7 +149,7 @@
                                 <a class="icon" href="#"><i class="fab fa-twitter"></i></a>
                                 <a class="icon" href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a class="icon" href="#"><i class="fab fa-instagram"></i></a>
-                                <a class="icon" href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a class="icon" href="{{route('professor')}}"><i class="fab fa-google-plus-g"></i></a>
                             </div>
 
                         </div>
@@ -162,7 +162,7 @@
 
                     <div class="box" style="background-color: white; height: 500px;width: 70%">
                         <div>
-                            <img class="imgBox" src="{{asset('Blog/img/person_5.jpg')}}">
+                            <img class="imgBox" src="{{asset('Blog/img/mane.png')}}">
                         </div>
                         <div>
                             <h4 style="font-size:19px;margin-top: 10px ">داور گیوکی</h4>
@@ -173,7 +173,7 @@
                                 <a class="icon" href="#"><i class="fab fa-twitter"></i></a>
                                 <a class="icon" href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a class="icon" href="#"><i class="fab fa-instagram"></i></a>
-                                <a class="icon" href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a class="icon" href="{{route('professor')}}"><i class="fab fa-google-plus-g"></i></a>
                             </div>
 
                         </div>
@@ -184,7 +184,7 @@
 
                     <div class="box" style="background-color: white; height: 500px;width: 70%">
                         <div>
-                            <img class="imgBox" src="{{asset('Blog/img/person_5.jpg')}}">
+                            <img class="imgBox" src="{{asset('Blog/img/mane.png')}}">
                         </div>
                         <div>
                             <h4 style="font-size:19px;margin-top: 10px ">صادق حسینی</h4>
@@ -195,7 +195,7 @@
                                 <a class="icon" href="#"><i class="fab fa-twitter"></i></a>
                                 <a class="icon" href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a class="icon" href="#"><i class="fab fa-instagram"></i></a>
-                                <a class="icon" href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a class="icon" href="{{route('professor')}}"><i class="fab fa-google-plus-g"></i></a>
                             </div>
 
                         </div>
@@ -206,7 +206,7 @@
 
                     <div class="box" style="background-color: white; height: 500px;width: 70%">
                         <div>
-                            <img class="imgBox" src="{{asset('Blog/img/person_5.jpg')}}">
+                            <img class="imgBox" src="{{asset('Blog/img/wemane.png')}}">
                         </div>
                         <div>
                             <h4 style="font-size:19px;margin-top: 10px ">الهام فرجی</h4>
@@ -217,7 +217,7 @@
                                 <a class="icon" href="#"><i class="fab fa-twitter"></i></a>
                                 <a class="icon" href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a class="icon" href="#"><i class="fab fa-instagram"></i></a>
-                                <a class="icon" href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a class="icon" href="{{route('professor')}}"><i class="fab fa-google-plus-g"></i></a>
                             </div>
 
                         </div>
@@ -239,63 +239,22 @@
                     <div class="row">
                         <div class="col-sm-12 col-md-6">
                             <h3 style="text-align: center">پست ها</h3>
-                            <hr>
+
                             <div class="row">
-                                <div class=" col-md-4">
+                                <div onmouseover="ShowButton()" onmouseout="HideButton()" class=" col-md-4">
                                     <div class="card-box-b card-shadow news-box">
                                         <div class="img-box-b">
-                                            <img src="{{asset('Blog/img/agent-1.jpg')}}" alt="" class="img-b img-fluid">
+                                            <img src="Blog/img/acm.jpg" alt="" class="img-b img-fluid"  style="width: 300px ; height: 270px">
                                         </div>
                                         <div class="card-overlay">
                                             <div class="card-header-b">
                                                 <div class="card-category-b">
-
-                                                </div>
-                                                <div class="card-title-b">
-                                                    <h2 class="title-2">
-                                                        <a href="#">
-                                                            <br></a>
-                                                    </h2>
-                                                </div>
-                                                <div class="card-date">
-                                                    <a href="#" class="category-b"> کاربر 1</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class=" col-md-4">
-                                    <div class="card-box-b card-shadow news-box">
-                                        <div class="img-box-b">
-                                            <img src="{{asset('Blog/img/picc1.jpg')}}" alt="" class="img-b img-fluid">
-                                        </div>
-                                        <div class="card-overlay">
-                                            <div class="card-header-b">
-                                                <div class="card-category-b">
-
-                                                </div>
-                                                <div class="card-title-b">
-                                                    <h2 class="title-2">
-                                                        <a href="#">
-                                                            <br> </a>
-                                                    </h2>
-                                                </div>
-                                                <div class="card-date">
-                                                    <a href="#" class="category-b">کاربر 2</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class=" col-md-4">
-                                    <div class="card-box-b card-shadow news-box">
-                                        <div class="img-box-b">
-                                            <img src="{{asset('Blog/img/agent-6.jpg')}}" alt="" class="img-b img-fluid">
-                                        </div>
-                                        <div class="card-overlay">
-                                            <div class="card-header-b">
-                                                <div class="card-category-b">
-
+                                                    <div class="Btn_Post">
+                                                        <div class="row">
+                                                            <a class="col-lg-6" href="#"><i   class="eye far fa-eye"></i></a>
+                                                            <a class="col-lg-6" href="#"><i   class="show fas fa-external-link-alt"></i></a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="card-title-b">
                                                     <h2 class="title-2">
@@ -303,8 +262,57 @@
                                                             <br> </a>
                                                     </h2>
                                                 </div>
-                                                <div class="card-date">
-                                                    <a href="#" class="category-b">کاربر 3</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div onmouseover="ShowButton()" onmouseout="HideButton()" class=" col-md-4">
+                                    <div class="card-box-b card-shadow news-box">
+                                        <div class="img-box-b">
+                                            <img src="Blog/img/mmm.jpg" alt="" class="img-b img-fluid"  style="width: 300px ;  height: 270px">
+                                        </div>
+                                        <div class="card-overlay">
+                                            <div class="card-header-b">
+                                                <div class="card-category-b">
+                                                    <div class="Btn_Post">
+                                                        <div class="row">
+                                                            <a class="col-lg-6" href="#"><i class="far fa-eye"></i></a>
+                                                            <a class="col-lg-6" href="#"><i
+                                                                        class="fas fa-external-link-alt"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-title-b">
+                                                    <h2 class="title-2">
+                                                        <a href="blog-single.html">
+                                                            <br> </a>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div onmouseover="ShowButton()" onmouseout="HideButton()" class=" col-md-4">
+                                    <div class="card-box-b card-shadow news-box">
+                                        <div class="img-box-b">
+                                            <img src="Blog/img/ima.jfif" alt="" class="img-b img-fluid" style="width: 300px ;  height: 270px">
+                                        </div>
+                                        <div class="card-overlay">
+                                            <div class="card-header-b">
+                                                <div class="card-category-b">
+                                                    <div class="Btn_Post">
+                                                        <div class="row">
+                                                            <a class="col-lg-6" href="#"><i class="far fa-eye"></i></a>
+                                                            <a class="col-lg-6" href="#"><i
+                                                                        class="fas fa-external-link-alt"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-title-b">
+                                                    <h2 class="title-2">
+                                                        <a href="blog-single.html">
+                                                            <br> </a>
+                                                    </h2>
                                                 </div>
                                             </div>
                                         </div>
@@ -313,81 +321,91 @@
                             </div>
                             <br>
                             <div class="row">
-                                <div class=" col-md-4">
+                                <div onmouseover="ShowButton()" onmouseout="HideButton()" class=" col-md-4">
                                     <div class="card-box-b card-shadow news-box">
                                         <div class="img-box-b">
-                                            <img src="{{asset('Blog/img/agent-2.jpg')}}" alt="" class="img-b img-fluid">
+                                            <img src="Blog/img/imag.jfif" alt="" class="img-b img-fluid" style="width: 300px ;  height: 270px">
                                         </div>
                                         <div class="card-overlay">
                                             <div class="card-header-b">
                                                 <div class="card-category-b">
-
+                                                    <div class="Btn_Post">
+                                                        <div class="row">
+                                                            <a class="col-lg-6" href="#"><i class="far fa-eye"></i></a>
+                                                            <a class="col-lg-6" href="#"><i
+                                                                        class="fas fa-external-link-alt"></i></a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="card-title-b">
                                                     <h2 class="title-2">
-                                                        <a href="#">
+                                                        <a href="blog-single.html">
                                                             <br> </a>
                                                     </h2>
-                                                </div>
-                                                <div class="card-date">
-                                                    <a href="#" class="category-b">کاربر 4</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" col-md-4">
+                                <div onmouseover="ShowButton()" onmouseout="HideButton()" class=" col-md-4">
                                     <div class="card-box-b card-shadow news-box">
                                         <div class="img-box-b">
-                                            <img src="{{asset('Blog/img/picc2.jpg')}}" alt="" class="img-b img-fluid">
+                                            <img src="Blog/img/sardar.jpg" alt="" class="img-b img-fluid" style="width: 300px ;  height: 270px">
                                         </div>
                                         <div class="card-overlay">
                                             <div class="card-header-b">
                                                 <div class="card-category-b">
-
+                                                    <div class="Btn_Post">
+                                                        <div class="row">
+                                                            <a class="col-lg-6" href="#"><i class="far fa-eye"></i></a>
+                                                            <a class="col-lg-6" href="#"><i
+                                                                        class="fas fa-external-link-alt"></i></a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="card-title-b">
                                                     <h2 class="title-2">
-                                                        <a href="#">
+                                                        <a href="blog-single.html">
                                                             <br> </a>
                                                     </h2>
-                                                </div>
-                                                <div class="card-date">
-                                                    <a href="#" class="category-b">کاربر 5</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" col-md-4">
+                                <div onmouseover="ShowButton()" onmouseout="HideButton()" class=" col-md-4">
                                     <div class="card-box-b card-shadow news-box">
                                         <div class="img-box-b">
-                                            <img src="{{asset('Blog/img/picc3.jpg')}}" alt="" class="img-b img-fluid">
+                                            <img src="Blog/img/i.jfif" alt="" class="img-b img-fluid" style="width: 300px ;  height: 270px">
                                         </div>
                                         <div class="card-overlay">
                                             <div class="card-header-b">
                                                 <div class="card-category-b">
-
+                                                    <div class="Btn_Post">
+                                                        <div class="row">
+                                                            <a class="col-lg-6" href="#"><i class="far fa-eye"></i></a>
+                                                            <a class="col-lg-6" href="#"><i
+                                                                        class="fas fa-external-link-alt"></i></a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="card-title-b">
                                                     <h2 class="title-2">
-                                                        <a href="#">
+                                                        <a href="blog-single.html">
                                                             <br> </a>
                                                     </h2>
-                                                </div>
-                                                <div class="card-date">
-                                                    <a href="#" class="category-b">کاربر 6</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <hr>
+                            <br>
+                            d
                         </div>
                         <div class="SliderMain  col-md-6 col-sm-12">
                             <h3 style="text-align: center">اخبار</h3>
-                            <div style="border-top: 1px solid black"></div>
+                            <div></div>
                             <div class="row" style="margin-top: 10px">
 
                                 <div class="col-lg-9 col-md-8" id="slider">
@@ -395,13 +413,11 @@
                                     <div class="slide active">
                                         <center>
                                             <div>
-                                                <img class="imageHead" src="{{asset('Blog/img/slide.jpg')}}">
+                                                <img class="imageHead" src="Blog/img/slide-1.jpg">
                                             </div>
-                                            <h4>Html</h4>
-                                            <p style="text-align: right;margin-right: 30px">
-                                                Don't worry if these examples use tags you have not learned. You will
-                                                learn about them in the
-                                                next chapters. HTML Documents. All HTML documents must start ...
+                                            <h3 style="text-align: right ; color: black">مسابقات acm</h3>
+                                            <p style="direction: rtl;margin-right: 30px ; color: black">
+                                                مسابقات acm غرب کشور در دانشگاه ملایر با همکاری گروه کامپیوتر دانشگاه ملایر و همچینی انجکن عملی دکامپیوتر دانشگاه ملایر با شرکت 20 تیم در تاریخ 28 فرودین ماه سا 98 در این محل نمایشگاه های های دائمی این دانشگاه برگزار گردید.
                                             </p>
                                         </center>
                                     </div>
@@ -409,13 +425,11 @@
                                     <div class="slide ">
                                         <center>
                                             <div>
-                                                <img class="imageHead" src="{{asset('Blog/img/slide.jpg')}}">
+                                                <img class="imageHead" src="Blog/img/slide-2.jpg">
                                             </div>
-                                            <h4>React-native</h4>
-                                            <p style="text-align: right;margin-right: 30px">
-                                                React Native is a JavaScript framework for writing real,
-                                                natively rendering mobile applications for iOS and Android.
-                                                It's based on React, Facebook's JavaScript ...
+                                            <h3 style="text-align: right ; color: black">مسابقات acm</h3>
+                                            <p style="direction: rtl;margin-right: 30px ; color: black">
+                                                مسابقات acm غرب کشور در دانشگاه ملایر با همکاری گروه کامپیوتر دانشگاه ملایر و همچینی انجکن عملی دکامپیوتر دانشگاه ملایر با شرکت 20 تیم در تاریخ 28 فرودین ماه سا 98 در این محل نمایشگاه های های دائمی این دانشگاه برگزار گردید.
                                             </p>
                                         </center>
                                     </div>
@@ -424,14 +438,11 @@
                                     <div class="slide">
                                         <center>
                                             <div>
-                                                <img class="imageHead" src="{{asset('Blog/img/slide.jpg')}}">
+                                                <img class="imageHead" src="Blog/img/slide-3.jpg">
                                             </div>
-                                            <h4>JavaScript</h4>
-                                            <p style="text-align: right; margin-right: 30px">
-                                                is a lightweight interpreted or just-in-time compiled programming
-                                                language with first-class functions. While it is most well-known
-                                                as the scripting language for Web pages, many non-browser environments
-                                                also use it, such as Node.js, Apache CouchDB and Adobe Acrobat.
+                                            <h3 style="text-align: right ; color: black">مسابقات acm</h3>
+                                            <p style="direction: rtl;margin-right: 30px ; color: black">
+                                                مسابقات acm غرب کشور در دانشگاه ملایر با همکاری گروه کامپیوتر دانشگاه ملایر و همچینی انجکن عملی دکامپیوتر دانشگاه ملایر با شرکت 20 تیم در تاریخ 28 فرودین ماه سا 98 در این محل نمایشگاه های های دائمی این دانشگاه برگزار گردید.
                                             </p>
                                         </center>
 
@@ -441,15 +452,11 @@
                                     <div class="slide">
                                         <center>
                                             <div>
-                                                <img class="imageHead" src="{{asset('Blog/img/slide.jpg')}}">
+                                                <img class="imageHead" src="Blog/img/acm.jpg">
                                             </div>
-                                            <h4>Program</h4>
-                                            <p style="text-align: right;margin-right: 30px">
-                                                In American English, program is the correct spelling. In Australian
-                                                English,
-                                                program and programme are both acceptable. In British English, programme
-                                                is the prefered spelling, although program is often used in computing
-                                                contexts.
+                                            <h3 style="text-align: right ; color: black">مسابقات acm</h3>
+                                            <p style="direction: rtl;margin-right: 30px ; color: black">
+                                                مسابقات acm غرب کشور در دانشگاه ملایر با همکاری گروه کامپیوتر دانشگاه ملایر و همچینی انجکن عملی دکامپیوتر دانشگاه ملایر با شرکت 20 تیم در تاریخ 28 فرودین ماه سا 98 در این محل نمایشگاه های های دائمی این دانشگاه برگزار گردید.
                                             </p>
                                         </center>
                                     </div>
@@ -474,13 +481,13 @@
 
 
                                     <a href="#" class="img4 list-group-item">
-                                        <img class="img" src="{{asset('Blog/img/slide-4.jpg')}}">
+                                        <img class="img" src="{{asset('Blog/img/acm.jpg')}}">
 
                                     </a>
 
                                 </div>
                             </div>
-                            <div style="margin-top: 13.6px; border-top: 1px solid black"></div>
+                            <div ></div>
                         </div>
                     </div>
                 </div>
@@ -533,23 +540,28 @@
         </center>
     </section>
 
-    <section class=" section-header">
+    <section>
         <center>
             <form>
-                <h3 style="margin-top: 15px"> ارتباط با ما</h3>
+                <h1 style="margin-top: 15px">تماس با ما</h1>
                 <input id="name" style="direction: rtl;margin-top: 20px" type="text" class="col-lg-5 form-control"
                        placeholder="نام و نام خانوادگی">
-                <input style="direction: rtl;margin-top: 10px" type="text" class="col-lg-5 form-control" placeholder="ایمیل">
+                <input style="direction: rtl;margin-top: 10px" type="text" class="col-lg-5 form-control"
+                       placeholder="ایمیل">
                 <input style="direction: rtl;margin-top: 10px" type="text" class="col-lg-5 form-control"
                        placeholder="کد کاربری">
-                <textarea  class="form-control col-lg-4" rows="9" cols="20" style="direction: rtl;height: 300px; margin-top: 20px;margin-bottom: 30px" size="10">
+                <textarea class="form-control col-lg-4" rows="9" cols="20"
+                          style="direction: rtl;height: 300px; margin-top: 20px;margin-bottom: 30px" size="10">
 
             متن پیام
 
         </textarea>
+                <button class="btn btn-success btn-lg">ثبت</button>
             </form>
         </center>
     </section>
+    <br>
+    <br>
 
 
 @stop
